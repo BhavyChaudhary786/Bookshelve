@@ -1,0 +1,29 @@
+18:20:22.140 [main] INFO  test_Cases.TS_1 - Storage type open is selected by hovering on Storage type.
+18:20:22.383 [main] INFO  test_Cases.TS_1 - Out of stack products are excluded.
+18:20:26.728 [main] INFO  test_Cases.TS_1 - Getting top three Bookshelves info.
+18:20:26.729 [main] INFO  test_Cases.TS_1 - ***TS_1 test case passed successfully.....***
+18:33:31.758 [main] INFO  test_Cases.TS_1 - ***Starting TS_1 Test ***
+18:33:34.829 [main] INFO  test_Cases.TS_1 - Clicked on Bookshelves.
+18:33:39.988 [main] INFO  test_Cases.TS_1 - Clicked on popup.
+18:33:46.335 [main] INFO  test_Cases.TS_1 - Price range is Selected By using the slider.
+18:33:46.691 [main] INFO  test_Cases.TS_1 - Storage type open is selected by hovering on Storage type.
+18:33:46.864 [main] INFO  test_Cases.TS_1 - Out of stack products are excluded.
+18:33:46.933 [main] ERROR test_Cases.TS_1 - test Failed...
+18:34:03.268 [main] INFO  test_Cases.TS_2 - ***Starting TS_2 Test ***
+18:34:05.681 [main] INFO  test_Cases.TS_2 - Clicked on Bookshelves.
+18:34:10.846 [main] INFO  test_Cases.TS_2 - Clicked on popup.
+18:35:44.337 [main] INFO  test_Cases.TS_1 - ***Starting TS_1 Test ***
+18:35:47.876 [main] INFO  test_Cases.TS_1 - Clicked on Bookshelves.
+18:35:53.048 [main] INFO  test_Cases.TS_1 - Clicked on popup.
+18:35:59.566 [main] INFO  test_Cases.TS_1 - Price range is Selected By using the slider.
+18:36:00.608 [main] INFO  test_Cases.TS_1 - Storage type open is selected by hovering on Storage type.
+18:36:01.005 [main] INFO  test_Cases.TS_1 - Out of stack products are excluded.
+18:36:01.183 [main] ERROR test_Cases.TS_1 - test Failed...
+18:39:14.462 [main] INFO  test_Cases.TS_1 - ***Starting TS_1 Test ***
+18:39:17.048 [main] INFO  test_Cases.TS_1 - Clicked on Bookshelves.
+18:39:22.253 [main] INFO  test_Cases.TS_1 - Clicked on popup.
+18:39:28.961 [main] INFO  test_Cases.TS_1 - Price range is Selected By using the slider.
+18:39:29.344 [main] INFO  test_Cases.TS_1 - Storage type open is selected by hovering on Storage type.
+18:39:29.549 [main] INFO  test_Cases.TS_1 - Out of stack products are excluded.
+18:39:33.833 [main] INFO  test_Cases.TS_1 - Getting top three Bookshelves info.
+18:39:33.834 [main] INFO  test_Cases.TS_1 - ***TS_1 test case passed successfully.....***
