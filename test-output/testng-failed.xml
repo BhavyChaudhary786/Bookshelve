@@ -7,13 +7,14 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="test_Cases.TS_1">
+      <class name="test_Cases.TS_2">
         <methods>
+          <include name="select_Home_dkr"/>
           <include name="tearDown"/>
-          <include name="verify"/>
+          <include name="set2"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- test_Cases.TS_1 -->
+      </class> <!-- test_Cases.TS_2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="21" passed="21" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-17T18:38:59 IST" name="Suite" finished-at="2024-03-17T18:39:38 IST" duration-ms="38818">
+  <suite started-at="2024-03-21T12:45:04 IST" name="Suite" finished-at="2024-03-21T12:47:10 IST" duration-ms="125406">
     <groups>
     </groups>
-    <test started-at="2024-03-17T18:38:59 IST" name="Test" finished-at="2024-03-17T18:39:38 IST" duration-ms="38818">
-      <class name="test_Cases.TS_1">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:test_Cases.TS_1@53fb3dab]" started-at="2024-03-17T18:39:00 IST" name="setup" finished-at="2024-03-17T18:39:14 IST" duration-ms="13832" status="PASS">
+    <test started-at="2024-03-21T12:45:04 IST" name="Test" finished-at="2024-03-21T12:47:10 IST" duration-ms="125406">
+      <class name="test_Cases.TS_Login">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:test_Cases.TS_Login@606e4010]" started-at="2024-03-21T12:45:05 IST" name="setup" finished-at="2024-03-21T12:45:18 IST" duration-ms="12180" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,226 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify()[pri:0, instance:test_Cases.TS_1@53fb3dab]" started-at="2024-03-17T18:39:14 IST" name="verify" finished-at="2024-03-17T18:39:33 IST" duration-ms="19428" status="PASS">
+        <test-method is-config="true" signature="set()[pri:0, instance:test_Cases.TS_Login@606e4010]" started-at="2024-03-21T12:45:18 IST" name="set" finished-at="2024-03-21T12:45:18 IST" duration-ms="189" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_Cases.TS_1@53fb3dab]" started-at="2024-03-17T18:39:34 IST" name="tearDown" finished-at="2024-03-17T18:39:38 IST" duration-ms="3766" status="PASS">
+        </test-method> <!-- set -->
+        <test-method signature="LoginClick()[pri:1, instance:test_Cases.TS_Login@606e4010]" started-at="2024-03-21T12:45:18 IST" name="LoginClick" finished-at="2024-03-21T12:45:21 IST" duration-ms="3138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginClick -->
+        <test-method is-config="true" signature="set()[pri:0, instance:test_Cases.TS_Login@606e4010]" started-at="2024-03-21T12:45:22 IST" name="set" finished-at="2024-03-21T12:45:22 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method signature="InvalidLogin()[pri:2, instance:test_Cases.TS_Login@606e4010]" started-at="2024-03-21T12:45:22 IST" name="InvalidLogin" finished-at="2024-03-21T12:45:25 IST" duration-ms="2996" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidLogin -->
+        <test-method is-config="true" signature="set()[pri:0, instance:test_Cases.TS_Login@606e4010]" started-at="2024-03-21T12:45:25 IST" name="set" finished-at="2024-03-21T12:45:25 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method signature="Error_Navigate()[pri:3, instance:test_Cases.TS_Login@606e4010]" started-at="2024-03-21T12:45:25 IST" name="Error_Navigate" finished-at="2024-03-21T12:45:29 IST" duration-ms="4229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Error_Navigate -->
+        <test-method is-config="true" signature="set()[pri:0, instance:test_Cases.TS_Login@606e4010]" started-at="2024-03-21T12:45:30 IST" name="set" finished-at="2024-03-21T12:45:30 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method signature="LoginClickNew()[pri:4, instance:test_Cases.TS_Login@606e4010]" started-at="2024-03-21T12:45:30 IST" name="LoginClickNew" finished-at="2024-03-21T12:45:33 IST" duration-ms="2497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginClickNew -->
+        <test-method is-config="true" signature="set()[pri:0, instance:test_Cases.TS_Login@606e4010]" started-at="2024-03-21T12:45:33 IST" name="set" finished-at="2024-03-21T12:45:33 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method signature="ValidLogin()[pri:5, instance:test_Cases.TS_Login@606e4010]" started-at="2024-03-21T12:45:33 IST" name="ValidLogin" finished-at="2024-03-21T12:45:37 IST" duration-ms="3551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_Cases.TS_Login@606e4010]" started-at="2024-03-21T12:45:38 IST" name="tearDown" finished-at="2024-03-21T12:45:42 IST" duration-ms="4050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test_Cases.TS_Login -->
+      <class name="test_Cases.TS_2">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:test_Cases.TS_2@6caf0677]" started-at="2024-03-21T12:46:13 IST" name="setup" finished-at="2024-03-21T12:46:22 IST" duration-ms="9570" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="set2()[pri:0, instance:test_Cases.TS_2@6caf0677]" started-at="2024-03-21T12:46:22 IST" name="set2" finished-at="2024-03-21T12:46:22 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set2 -->
+        <test-method signature="Popup_Handling()[pri:1, instance:test_Cases.TS_2@6caf0677]" started-at="2024-03-21T12:46:22 IST" name="Popup_Handling" finished-at="2024-03-21T12:46:28 IST" duration-ms="5978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Popup_Handling -->
+        <test-method is-config="true" signature="set2()[pri:0, instance:test_Cases.TS_2@6caf0677]" started-at="2024-03-21T12:46:29 IST" name="set2" finished-at="2024-03-21T12:46:29 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set2 -->
+        <test-method signature="hover_price()[pri:2, instance:test_Cases.TS_2@6caf0677]" started-at="2024-03-21T12:46:29 IST" name="hover_price" finished-at="2024-03-21T12:46:32 IST" duration-ms="3145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hover_price -->
+        <test-method is-config="true" signature="set2()[pri:0, instance:test_Cases.TS_2@6caf0677]" started-at="2024-03-21T12:46:33 IST" name="set2" finished-at="2024-03-21T12:46:33 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set2 -->
+        <test-method signature="Storage_Stock()[pri:3, instance:test_Cases.TS_2@6caf0677]" started-at="2024-03-21T12:46:33 IST" name="Storage_Stock" finished-at="2024-03-21T12:46:34 IST" duration-ms="1105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Storage_Stock -->
+        <test-method is-config="true" signature="set2()[pri:0, instance:test_Cases.TS_2@6caf0677]" started-at="2024-03-21T12:46:34 IST" name="set2" finished-at="2024-03-21T12:46:34 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set2 -->
+        <test-method signature="select_Home_dkr()[pri:4, instance:test_Cases.TS_2@6caf0677]" started-at="2024-03-21T12:46:34 IST" name="select_Home_dkr" finished-at="2024-03-21T12:46:35 IST" duration-ms="954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- select_Home_dkr -->
+        <test-method is-config="true" signature="set2()[pri:0, instance:test_Cases.TS_2@6caf0677]" started-at="2024-03-21T12:46:36 IST" name="set2" finished-at="2024-03-21T12:46:36 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set2 -->
+        <test-method signature="Print_Book2()[pri:5, instance:test_Cases.TS_2@6caf0677]" started-at="2024-03-21T12:46:36 IST" name="Print_Book2" finished-at="2024-03-21T12:46:37 IST" duration-ms="646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Print_Book2 -->
+        <test-method is-config="true" signature="set2()[pri:0, instance:test_Cases.TS_2@6caf0677]" started-at="2024-03-21T12:46:37 IST" name="set2" finished-at="2024-03-21T12:46:37 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set2 -->
+        <test-method signature="print_collection()[pri:6, instance:test_Cases.TS_2@6caf0677]" started-at="2024-03-21T12:46:37 IST" name="print_collection" finished-at="2024-03-21T12:46:39 IST" duration-ms="2007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- print_collection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_Cases.TS_2@6caf0677]" started-at="2024-03-21T12:46:39 IST" name="tearDown" finished-at="2024-03-21T12:46:44 IST" duration-ms="4371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test_Cases.TS_2 -->
+      <class name="test_Cases.TS_3">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:test_Cases.TS_3@413d1baf]" started-at="2024-03-21T12:46:44 IST" name="setup" finished-at="2024-03-21T12:46:54 IST" duration-ms="10670" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="set3()[pri:0, instance:test_Cases.TS_3@413d1baf]" started-at="2024-03-21T12:46:54 IST" name="set3" finished-at="2024-03-21T12:46:54 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set3 -->
+        <test-method signature="click_gift_card()[pri:1, instance:test_Cases.TS_3@413d1baf]" started-at="2024-03-21T12:46:54 IST" name="click_gift_card" finished-at="2024-03-21T12:46:59 IST" duration-ms="4939" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_gift_card -->
+        <test-method is-config="true" signature="set3()[pri:0, instance:test_Cases.TS_3@413d1baf]" started-at="2024-03-21T12:47:00 IST" name="set3" finished-at="2024-03-21T12:47:00 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set3 -->
+        <test-method signature="click_bNa()[pri:2, instance:test_Cases.TS_3@413d1baf]" started-at="2024-03-21T12:47:00 IST" name="click_bNa" finished-at="2024-03-21T12:47:01 IST" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_bNa -->
+        <test-method is-config="true" signature="set3()[pri:0, instance:test_Cases.TS_3@413d1baf]" started-at="2024-03-21T12:47:01 IST" name="set3" finished-at="2024-03-21T12:47:01 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set3 -->
+        <test-method signature="gift_info()[pri:3, instance:test_Cases.TS_3@413d1baf]" started-at="2024-03-21T12:47:01 IST" name="gift_info" finished-at="2024-03-21T12:47:03 IST" duration-ms="1477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gift_info -->
+        <test-method is-config="true" signature="set3()[pri:0, instance:test_Cases.TS_3@413d1baf]" started-at="2024-03-21T12:47:03 IST" name="set3" finished-at="2024-03-21T12:47:03 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set3 -->
+        <test-method signature="recipient_info()[pri:4, instance:test_Cases.TS_3@413d1baf]" started-at="2024-03-21T12:47:03 IST" name="recipient_info" finished-at="2024-03-21T12:47:04 IST" duration-ms="855" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recipient_info -->
+        <test-method is-config="true" signature="set3()[pri:0, instance:test_Cases.TS_3@413d1baf]" started-at="2024-03-21T12:47:04 IST" name="set3" finished-at="2024-03-21T12:47:04 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set3 -->
+        <test-method signature="senders_info()[pri:5, instance:test_Cases.TS_3@413d1baf]" started-at="2024-03-21T12:47:04 IST" name="senders_info" finished-at="2024-03-21T12:47:05 IST" duration-ms="1311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- senders_info -->
+        <test-method is-config="true" signature="set3()[pri:0, instance:test_Cases.TS_3@413d1baf]" started-at="2024-03-21T12:47:06 IST" name="set3" finished-at="2024-03-21T12:47:06 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set3 -->
+        <test-method signature="error_info()[pri:6, instance:test_Cases.TS_3@413d1baf]" started-at="2024-03-21T12:47:06 IST" name="error_info" finished-at="2024-03-21T12:47:06 IST" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- error_info -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_Cases.TS_3@413d1baf]" started-at="2024-03-21T12:47:06 IST" name="tearDown" finished-at="2024-03-21T12:47:10 IST" duration-ms="3923" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test_Cases.TS_3 -->
+      <class name="test_Cases.TS_1">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:test_Cases.TS_1@645aa696]" started-at="2024-03-21T12:45:42 IST" name="setup" finished-at="2024-03-21T12:45:51 IST" duration-ms="8863" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="set1()[pri:0, instance:test_Cases.TS_1@645aa696]" started-at="2024-03-21T12:45:51 IST" name="set1" finished-at="2024-03-21T12:45:51 IST" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set1 -->
+        <test-method signature="Handle_Popup()[pri:1, instance:test_Cases.TS_1@645aa696]" started-at="2024-03-21T12:45:51 IST" name="Handle_Popup" finished-at="2024-03-21T12:45:58 IST" duration-ms="6713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Handle_Popup -->
+        <test-method is-config="true" signature="set1()[pri:0, instance:test_Cases.TS_1@645aa696]" started-at="2024-03-21T12:45:59 IST" name="set1" finished-at="2024-03-21T12:45:59 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set1 -->
+        <test-method signature="Price_Setting()[pri:3, instance:test_Cases.TS_1@645aa696]" started-at="2024-03-21T12:45:59 IST" name="Price_Setting" finished-at="2024-03-21T12:46:02 IST" duration-ms="3166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Price_Setting -->
+        <test-method is-config="true" signature="set1()[pri:0, instance:test_Cases.TS_1@645aa696]" started-at="2024-03-21T12:46:02 IST" name="set1" finished-at="2024-03-21T12:46:02 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set1 -->
+        <test-method signature="Storage_Stock()[pri:5, instance:test_Cases.TS_1@645aa696]" started-at="2024-03-21T12:46:02 IST" name="Storage_Stock" finished-at="2024-03-21T12:46:04 IST" duration-ms="1147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Storage_Stock -->
+        <test-method is-config="true" signature="set1()[pri:0, instance:test_Cases.TS_1@645aa696]" started-at="2024-03-21T12:46:04 IST" name="set1" finished-at="2024-03-21T12:46:04 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set1 -->
+        <test-method signature="BookShelve()[pri:8, instance:test_Cases.TS_1@645aa696]" started-at="2024-03-21T12:46:04 IST" name="BookShelve" finished-at="2024-03-21T12:46:08 IST" duration-ms="4003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BookShelve -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_Cases.TS_1@645aa696]" started-at="2024-03-21T12:46:08 IST" name="tearDown" finished-at="2024-03-21T12:46:13 IST" duration-ms="4083" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

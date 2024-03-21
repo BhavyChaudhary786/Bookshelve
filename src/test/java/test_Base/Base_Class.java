@@ -30,18 +30,20 @@ public class Base_Class  {
  
 	public static WebDriver driver;
 	public  Logger logger;
-	public Properties p;
-//	Actions act=new Actions(driver);
-	
+	public Properties p;	
 	
 	@BeforeClass
     
 	@Parameters({"browser"})
 	public void setup(String br) throws IOException
 	{
+		
+//		Config properties Initialization.
 		FileReader file=new FileReader("C:\\Users\\2318425\\eclipse-workspace\\BookShelves\\src\\test\\resources\\config.properties");
 		 p=new Properties();
 		 p.load(file);
+		 
+		 
 		switch(br.toLowerCase()) {
 		case "chrome":
 			driver=new ChromeDriver(); 
@@ -53,7 +55,7 @@ public class Base_Class  {
 			return;
 		}
 		//driver=new ChromeDriver();
-//		driver.manage().deleteAllCookies();
+
 		
 		
 //		Loading log4j2 file ************
@@ -64,8 +66,7 @@ public class Base_Class  {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	
 		
-//		Openingh the webPage.
-//		driver.get("https://www.urbanladder.com/");
+//		Opening the webPage.
 		driver.get(p.getProperty("appURL"));
 		
 //		Maximizing the window.
@@ -106,9 +107,8 @@ public class Base_Class  {
 	public String captureScreen(String tname) throws IOException {
 		 
 		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-		//TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
 		File sourceFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		String targetFilePath=System.getProperty("user.dir")+"\\ScreenShots\\" + tname + "_" + timeStamp + ".png";
+		String targetFilePath=System.getProperty("user.dir")+"\\Screenshots\\" + tname + "_" + timeStamp + ".png";
 		File targetFile=new File(targetFilePath);
 		sourceFile.renameTo(targetFile);
 		return targetFilePath;

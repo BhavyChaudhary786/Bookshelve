@@ -1,6 +1,7 @@
 package test_Cases;
 
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -9,25 +10,31 @@ import pageObjects.Home_Page;
 import test_Base.Base_Class;
 
 public class TS_3 extends Base_Class{
-	
-	
-	@Test
-	@Parameters({"browser"})
-	public void gift_card() {
+       
+		Home_Page hp;
+		Gift_page gp;
+		@BeforeMethod
+		public void set3() {
+			
+			hp=new Home_Page(driver);
+			gp=new Gift_page(driver);
+		}
+		@Test(priority=1)
+		public void click_gift_card() {
 		
 		logger.info("***Starting TS_3 Test ***");
-		
-		try {
-		Home_Page hp=new Home_Page(driver);
 		logger.info("Navigating to homepage.");
-	
 		hp.click_giftCard();
 		logger.info("Navigating to giftCards page.");
+		}
+	    @Test(priority=2)
+	    public void click_bNa() {
 
-		Gift_page gp=new Gift_page(driver);
 		gp.click_bNa();
 		logger.info("Clicking on Birthday And Anniversary Option.");
-		
+	    }
+	    @Test(priority=3)
+	    public void gift_info() {
 		gp.Amount();
 		logger.info("Amount is Entered.");
 		
@@ -37,11 +44,20 @@ public class TS_3 extends Base_Class{
 		
 		gp.Next();
 		logger.info("Next button is Selected.");
+	    }
+	    
+	    
+	    @Test(priority=4)
+	    public void recipient_info() {
 		gp.fill_rname();
 		gp.fill_rEmail();
 		gp.fill_rMobileNum();
-		logger.info("All the input boxes of 'To' field is Selected.");
-
+		logger.info("All the input boxes of 'To' field is filled.");
+	    }
+	    
+	    
+	    @Test(priority=5)
+	    public void senders_info() {
 		gp.fill_yname();
 		gp.fill_yEmail();
 		gp.fill_yMobileNum();
@@ -51,17 +67,17 @@ public class TS_3 extends Base_Class{
 
 		gp.click_confirm();
 		logger.info("Confirm button is Selected.");
-
+	    }
+	    
+	    
+	    @Test(priority=6)
+	    public void error_info() {
 		gp.getErrorMsg();
 		logger.info("Error message is printed on console.");
 		
-		}
-		catch(Exception e) {
-			logger.error("test failed....");
-			Assert.fail();
-		}
-		
 		logger.info("***TS_3 test case passed successfully. ***");
+		System.out.println("*********************************************************");
+		System.out.println("*********************************************************");
 
 	}
 

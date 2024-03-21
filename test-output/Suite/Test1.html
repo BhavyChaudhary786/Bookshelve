@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test1</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>33/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Mar 17 15:17:32 IST 2024</td>
+<td>Started on:</td><td>Wed Mar 20 16:10:18 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>26 seconds (26009 ms)</td>
+<tr><td>Total time:</td><td>205 seconds (205225 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,93 +76,170 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test_Cases.TS_1.tearDown()'><b>tearDown</b><br>Test class: test_Cases.TS_1</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [28a6ca0af2575d716d69053d69c21ac7, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 122.0.2365.80, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60217}, msedge: {msedgedriverVersion: 122.0.2365.92 (908657ec17be..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60217/devtoo..., se:cdpVersion: 122.0.2365.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:434)
-	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:432)
-	at test_Base.Base_Class.tearDown(Base_Class.java:71)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: java.util.concurrent.ExecutionException: java.lang.NullPointerException: Cannot invoke &quot;java.net.http.HttpClient.sendAsync(java.net.http.HttpRequest, java.net.http.HttpResponse$BodyHandler)&quot; because &quot;this.client&quot; is null
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:160)
-	... 27 more
-Caused by: java.lang.NullPointerException: Cannot invoke &quot;java.net.http.HttpClient.sendAsync(java.net.http.HttpRequest, java.net.http.HttpResponse$BodyHandler)&quot; because &quot;this.client&quot; is null
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:383)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:359)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:126)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-	... 3 more
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1197516268", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1197516268'><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [28a6ca0af2575d716d69053d69c21ac7, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 122.0.2365.80, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60217}, msedge: {msedgedriverVersion: 122.0.2365.92 (908657ec17be..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60217/devtoo..., se:cdpVersion: 122.0.2365.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:434)
-	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:432)
-	at test_Base.Base_Class.tearDown(Base_Class.java:71)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
-	at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassConfigurations(TestMethodWorker.java:229)
-	at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:215)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:131)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: java.util.concurrent.ExecutionException: java.lang.NullPointerException: Cannot invoke &quot;java.net.http.HttpClient.sendAsync(java.net.http.HttpRequest, java.net.http.HttpResponse$BodyHandler)&quot; because &quot;this.client&quot; is null
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:160)
-	... 27 more
-Caused by: java.lang.NullPointerException: Cannot invoke &quot;java.net.http.HttpClient.sendAsync(java.net.http.HttpRequest, java.net.http.HttpResponse$BodyHandler)&quot; because &quot;this.client&quot; is null
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:383)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:359)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:126)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-	... 3 more
-</pre></div></td>
+<td title='test_Cases.TS_Login.Login_Btnn()'><b>Login_Btnn</b><br>Test class: test_Cases.TS_Login</td>
+<td></td>
 <td>1</td>
-<td>test_Cases.TS_1@496bc455</td></tr>
+<td>test_Cases.TS_Login@4c163e3</td></tr>
+<tr>
+<td title='test_Cases.TS_2.Pop2()'><b>Pop2</b><br>Test class: test_Cases.TS_2</td>
+<td></td>
+<td>0</td>
+<td>test_Cases.TS_2@4d0d9fe7</td></tr>
+<tr>
+<td title='test_Cases.TS_Login.EmailWrite()'><b>EmailWrite</b><br>Test class: test_Cases.TS_Login</td>
+<td></td>
+<td>2</td>
+<td>test_Cases.TS_Login@4c163e3</td></tr>
+<tr>
+<td title='test_Cases.TS_3.error_info()'><b>error_info</b><br>Test class: test_Cases.TS_3</td>
+<td></td>
+<td>0</td>
+<td>test_Cases.TS_3@c430e6c</td></tr>
+<tr>
+<td title='test_Cases.TS_Login.Passnew()'><b>Passnew</b><br>Test class: test_Cases.TS_Login</td>
+<td></td>
+<td>0</td>
+<td>test_Cases.TS_Login@4c163e3</td></tr>
+<tr>
+<td title='test_Cases.TS_2.hover_storage()'><b>hover_storage</b><br>Test class: test_Cases.TS_2</td>
+<td></td>
+<td>0</td>
+<td>test_Cases.TS_2@4d0d9fe7</td></tr>
+<tr>
+<td title='test_Cases.TS_1.Pop()'><b>Pop</b><br>Test class: test_Cases.TS_1</td>
+<td></td>
+<td>0</td>
+<td>test_Cases.TS_1@4a8355dd</td></tr>
+<tr>
+<td title='test_Cases.TS_1.Sli()'><b>Sli</b><br>Test class: test_Cases.TS_1</td>
+<td></td>
+<td>6</td>
+<td>test_Cases.TS_1@4a8355dd</td></tr>
+<tr>
+<td title='test_Cases.TS_2.clickBook_shelves()'><b>clickBook_shelves</b><br>Test class: test_Cases.TS_2</td>
+<td></td>
+<td>7</td>
+<td>test_Cases.TS_2@4d0d9fe7</td></tr>
+<tr>
+<td title='test_Cases.TS_Login.LoginClicknew()'><b>LoginClicknew</b><br>Test class: test_Cases.TS_Login</td>
+<td></td>
+<td>1</td>
+<td>test_Cases.TS_Login@4c163e3</td></tr>
+<tr>
+<td title='test_Cases.TS_2.select_Home_dkr()'><b>select_Home_dkr</b><br>Test class: test_Cases.TS_2</td>
+<td></td>
+<td>2</td>
+<td>test_Cases.TS_2@4d0d9fe7</td></tr>
+<tr>
+<td title='test_Cases.TS_1.Stk()'><b>Stk</b><br>Test class: test_Cases.TS_1</td>
+<td></td>
+<td>0</td>
+<td>test_Cases.TS_1@4a8355dd</td></tr>
+<tr>
+<td title='test_Cases.TS_1.Sto()'><b>Sto</b><br>Test class: test_Cases.TS_1</td>
+<td></td>
+<td>0</td>
+<td>test_Cases.TS_1@4a8355dd</td></tr>
+<tr>
+<td title='test_Cases.TS_Login.Loginnew()'><b>Loginnew</b><br>Test class: test_Cases.TS_Login</td>
+<td></td>
+<td>1</td>
+<td>test_Cases.TS_Login@4c163e3</td></tr>
+<tr>
+<td title='test_Cases.TS_1.Books()'><b>Books</b><br>Test class: test_Cases.TS_1</td>
+<td></td>
+<td>4</td>
+<td>test_Cases.TS_1@4a8355dd</td></tr>
+<tr>
+<td title='test_Cases.TS_2.Print_Book2()'><b>Print_Book2</b><br>Test class: test_Cases.TS_2</td>
+<td></td>
+<td>8</td>
+<td>test_Cases.TS_2@4d0d9fe7</td></tr>
+<tr>
+<td title='test_Cases.TS_2.select_stock()'><b>select_stock</b><br>Test class: test_Cases.TS_2</td>
+<td></td>
+<td>0</td>
+<td>test_Cases.TS_2@4d0d9fe7</td></tr>
+<tr>
+<td title='test_Cases.TS_1.Hov()'><b>Hov</b><br>Test class: test_Cases.TS_1</td>
+<td></td>
+<td>0</td>
+<td>test_Cases.TS_1@4a8355dd</td></tr>
+<tr>
+<td title='test_Cases.TS_3.click_bNa()'><b>click_bNa</b><br>Test class: test_Cases.TS_3</td>
+<td></td>
+<td>0</td>
+<td>test_Cases.TS_3@c430e6c</td></tr>
+<tr>
+<td title='test_Cases.TS_Login.Login()'><b>Login</b><br>Test class: test_Cases.TS_Login</td>
+<td></td>
+<td>2</td>
+<td>test_Cases.TS_Login@4c163e3</td></tr>
+<tr>
+<td title='test_Cases.TS_2.hover_price()'><b>hover_price</b><br>Test class: test_Cases.TS_2</td>
+<td></td>
+<td>6</td>
+<td>test_Cases.TS_2@4d0d9fe7</td></tr>
+<tr>
+<td title='test_Cases.TS_3.click_gift_card()'><b>click_gift_card</b><br>Test class: test_Cases.TS_3</td>
+<td></td>
+<td>6</td>
+<td>test_Cases.TS_3@c430e6c</td></tr>
+<tr>
+<td title='test_Cases.TS_3.gift_info()'><b>gift_info</b><br>Test class: test_Cases.TS_3</td>
+<td></td>
+<td>1</td>
+<td>test_Cases.TS_3@c430e6c</td></tr>
+<tr>
+<td title='test_Cases.TS_3.recipient_info()'><b>recipient_info</b><br>Test class: test_Cases.TS_3</td>
+<td></td>
+<td>1</td>
+<td>test_Cases.TS_3@c430e6c</td></tr>
+<tr>
+<td title='test_Cases.TS_Login.loginnew()'><b>loginnew</b><br>Test class: test_Cases.TS_Login</td>
+<td></td>
+<td>2</td>
+<td>test_Cases.TS_Login@4c163e3</td></tr>
+<tr>
+<td title='test_Cases.TS_Login.Emailnew1()'><b>Emailnew1</b><br>Test class: test_Cases.TS_Login</td>
+<td></td>
+<td>2</td>
+<td>test_Cases.TS_Login@4c163e3</td></tr>
+<tr>
+<td title='test_Cases.TS_1.Pri()'><b>Pri</b><br>Test class: test_Cases.TS_1</td>
+<td></td>
+<td>0</td>
+<td>test_Cases.TS_1@4a8355dd</td></tr>
+<tr>
+<td title='test_Cases.TS_2.print_collection()'><b>print_collection</b><br>Test class: test_Cases.TS_2</td>
+<td></td>
+<td>9</td>
+<td>test_Cases.TS_2@4d0d9fe7</td></tr>
+<tr>
+<td title='test_Cases.TS_1.PrintBook_1()'><b>PrintBook_1</b><br>Test class: test_Cases.TS_1</td>
+<td></td>
+<td>9</td>
+<td>test_Cases.TS_1@4a8355dd</td></tr>
+<tr>
+<td title='test_Cases.TS_Login.LoginClick()'><b>LoginClick</b><br>Test class: test_Cases.TS_Login</td>
+<td></td>
+<td>1</td>
+<td>test_Cases.TS_Login@4c163e3</td></tr>
+<tr>
+<td title='test_Cases.TS_Login.Error()'><b>Error</b><br>Test class: test_Cases.TS_Login</td>
+<td></td>
+<td>8</td>
+<td>test_Cases.TS_Login@4c163e3</td></tr>
+<tr>
+<td title='test_Cases.TS_3.senders_info()'><b>senders_info</b><br>Test class: test_Cases.TS_3</td>
+<td></td>
+<td>1</td>
+<td>test_Cases.TS_3@c430e6c</td></tr>
+<tr>
+<td title='test_Cases.TS_Login.Passwrd()'><b>Passwrd</b><br>Test class: test_Cases.TS_Login</td>
+<td></td>
+<td>0</td>
+<td>test_Cases.TS_Login@4c163e3</td></tr>
 </table><p>
 </body>
 </html>

@@ -31,12 +31,6 @@ public class ExtentReportManager implements ITestListener {
 	String repName;
 
 	public void onStart(ITestContext testContext) {
-		
-		/*SimpleDateFormat df=new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss");
-		Date dt=new Date();
-		String currentdatetimestamp=df.format(dt);
-		*/
-		
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());// time stamp
 		repName = "Test-Report-" + timeStamp + ".html";
 		sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);// specify location of the report
@@ -47,21 +41,14 @@ public class ExtentReportManager implements ITestListener {
 		
 		extent = new ExtentReports();
 		extent.attachReporter(sparkReporter);
-		extent.setSystemInfo("Application", "beCognizant");
-		extent.setSystemInfo("Module", "Admin");
+		extent.setSystemInfo("Application", "UrbanLadder");
+		extent.setSystemInfo("Module", "GiftCard");
 		//extent.setSystemInfo("Sub Module", "Customers");
-		extent.setSystemInfo("User Name", System.getProperty("user.name"));
-		extent.setSystemInfo("Environemnt", "QA");
+		extent.setSystemInfo("User Name", "Bhavy Chaudhary");
+		extent.setSystemInfo("Environemnt", "QEA");
 		
 		extent.setSystemInfo("Operating System", "WIN11");
-		extent.setSystemInfo("Browser", "Edge");
-		
-//		String os = testContext.getCurrentXmlTest().getParameter("os");
-//		extent.setSystemInfo("Operating System", os);
-//		
-//		String browser = testContext.getCurrentXmlTest().getParameter("browser");
-//		extent.setSystemInfo("Browser", browser);
-//		
+		extent.setSystemInfo("Browser", "EDGE | CHROME");
 		List<String> includedGroups = testContext.getCurrentXmlTest().getIncludedGroups();
 		if(!includedGroups.isEmpty()) {
 		extent.setSystemInfo("Groups", includedGroups.toString());
@@ -118,27 +105,6 @@ public class ExtentReportManager implements ITestListener {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
-		/*
-		 * try { URL url = new
-		 * URL("file:///"+System.getProperty("user.dir")+"\\reports\\"+repName);
-		 * 
-		 * // Create the email message 
-		 * ImageHtmlEmail email = new ImageHtmlEmail();
-		 * email.setDataSourceResolver(new DataSourceUrlResolver(url));
-		 * email.setHostName("smtp.googlemail.com"); 
-		 * email.setSmtpPort(465);
-		 * email.setAuthenticator(new DefaultAuthenticator("pavanoltraining@gmail.com","password")); 
-		 * email.setSSLOnConnect(true);
-		 * email.setFrom("pavanoltraining@gmail.com"); //Sender
-		 * email.setSubject("Test Results");
-		 * email.setMsg("Please find Attached Report....");
-		 * email.addTo("pavankumar.busyqa@gmail.com"); //Receiver 
-		 * email.attach(url, "extent report", "please check report..."); 
-		 * email.send(); // send the email 
-		 * }
-		 * catch(Exception e) { e.printStackTrace(); }
-		 */
 	}
 
 }

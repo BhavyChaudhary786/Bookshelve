@@ -3,12 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test_Cases.TS_3">
+      <class name="test_Cases.TS_2">
         <methods>
+          <include name="print_collection"/>
+          <include name="select_Home_dkr"/>
+          <include name="hover_price"/>
+          <include name="Storage_Stock"/>
+          <include name="tearDown"/>
+          <include name="set2"/>
+          <include name="Popup_Handling"/>
           <include name="setup"/>
-          <include name="gift_card"/>
+          <include name="Print_Book2"/>
         </methods>
-      </class> <!-- test_Cases.TS_3 -->
+      </class> <!-- test_Cases.TS_2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

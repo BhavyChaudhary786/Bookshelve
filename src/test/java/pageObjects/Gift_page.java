@@ -49,12 +49,6 @@ public class Gift_page extends Base_Page  {
 	WebElement btn_confirm;
 	@FindBy(xpath="//input[@name='recipient_mobile_number']")
 	WebElement error_msg;
-
-
-	
-	//*[@id="app-container"]/div/main/section/section[3]/form/button
-	
-	
 	
 	
 	public void click_bNa() {
@@ -119,18 +113,4 @@ public void fill_yname() {
 		String s=error_msg.getAttribute("title");
 		System.out.println(s);
 	}
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 }
