@@ -33,12 +33,12 @@ public class Base_Class  {
 	public Properties p;	
 	
 	@BeforeClass
-    
 	@Parameters({"browser"})
 	public void setup(String br) throws IOException
 	{
 		
-//		Config properties Initialization.
+		//********************Config properties Initialization***********************//
+		
 		FileReader file=new FileReader("C:\\Users\\2318425\\eclipse-workspace\\BookShelves\\src\\test\\resources\\config.properties");
 		 p=new Properties();
 		 p.load(file);
@@ -54,46 +54,54 @@ public class Base_Class  {
 		default:
 			return;
 		}
+		
 		//driver=new ChromeDriver();
 
 		
 		
-//		Loading log4j2 file ************
+		//*************************Loading log4j2 file *****************************//
+		
 		logger = LogManager.getLogger(this.getClass()); // <this.getclass> returns current class.
 		
 		
-//		Applying Implicit Wait.
+		//***************************Applying Implicit Wait***************************//
+		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	
 		
-//		Opening the webPage.
+		//****************************Opening the webPage*******************************//
+		
 		driver.get(p.getProperty("appURL"));
 		
-//		Maximizing the window.
+		//******************************Maximizing the window***************************//
+		
 		driver.manage().window().maximize();
 	}
-//	
+
+	
 	@AfterClass
 	public void tearDown()
 	{
 		driver.quit();
 	}
 
-// Method for generating Random String
+// ***************************Methods for generating Random String**************************//
+	
 	public static String randomeString()
 	{
 		String generatedString=RandomStringUtils.randomAlphabetic(5);
 		return generatedString;
 	}
 
-// Method for generating Random Number
+// **************************Method for generating Random Number*****************************//
+	
 	public static String randomeNumber(int i)
 	{
 		String generatedString=RandomStringUtils.randomNumeric(i);
 		return generatedString;
 	}
 	
-// Method for generating Emails
+// *****************************Method for generating Emails**********************************//
 
 	public static String randomAlphaNumeric()
 	{
@@ -103,7 +111,8 @@ public class Base_Class  {
 		return (str+"@"+num);
 	}
 	
-//	Method for Capturing ScreenShots.
+//	*****************************Method for Capturing ScreenShots******************************//
+	
 	public String captureScreen(String tname) throws IOException {
 		 
 		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());

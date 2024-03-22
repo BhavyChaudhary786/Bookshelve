@@ -1,5 +1,15 @@
-12:47:04.314 [main] INFO  test_Cases.TS_3 - All the input boxes of 'To' field is filled.
-12:47:05.684 [main] INFO  test_Cases.TS_3 - All the input boxes of 'From' field is Selected.
-12:47:05.908 [main] INFO  test_Cases.TS_3 - Confirm button is Selected.
-12:47:06.223 [main] INFO  test_Cases.TS_3 - Error message is printed on console.
-12:47:06.224 [main] INFO  test_Cases.TS_3 - ***TS_3 test case passed successfully. ***
+15:55:58.885 [main] INFO  test_Cases.TS_2 - All the sub-menus under collections is printed.
+15:55:58.904 [main] INFO  test_Cases.TS_2 - ***TS_2 test case passed successfully.....***
+15:56:51.572 [main] INFO  test_Cases.TS_3 - ***Starting TS_3 Test ***
+15:56:51.572 [main] INFO  test_Cases.TS_3 - Navigating to homepage.
+15:57:34.675 [main] INFO  test_Cases.TS_3 - Navigating to giftCards page.
+15:57:35.765 [main] INFO  test_Cases.TS_3 - Clicking on Birthday And Anniversary Option.
+15:57:38.471 [main] INFO  test_Cases.TS_3 - Invalid Amount Entered
+15:57:38.832 [main] INFO  test_Cases.TS_3 - Amount is Entered.
+15:57:39.542 [main] INFO  test_Cases.TS_3 - Date is Selected.
+15:57:39.727 [main] INFO  test_Cases.TS_3 - Next button is Selected.
+15:57:40.765 [main] INFO  test_Cases.TS_3 - All the input boxes of 'To' field is filled.
+15:57:42.012 [main] INFO  test_Cases.TS_3 - All the input boxes of 'From' field is Selected.
+15:57:42.412 [main] INFO  test_Cases.TS_3 - Confirm button is Selected.
+15:57:42.934 [main] INFO  test_Cases.TS_3 - Error message is printed on console.
+15:57:42.934 [main] INFO  test_Cases.TS_3 - ***TS_3 test case passed successfully. ***

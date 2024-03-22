@@ -36,17 +36,15 @@ public class ExtentReportManager implements ITestListener {
 		sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);// specify location of the report
 
 		sparkReporter.config().setDocumentTitle("Bookshelves Automation Report"); // Title of report
-		sparkReporter.config().setReportName("Bookshelves Functional Testing"); // name of the report
+		sparkReporter.config().setReportName("Bookshelves Functional Testing"); // Name of the report
 		sparkReporter.config().setTheme(Theme.DARK);
 		
 		extent = new ExtentReports();
 		extent.attachReporter(sparkReporter);
 		extent.setSystemInfo("Application", "UrbanLadder");
 		extent.setSystemInfo("Module", "GiftCard");
-		//extent.setSystemInfo("Sub Module", "Customers");
 		extent.setSystemInfo("User Name", "Bhavy Chaudhary");
 		extent.setSystemInfo("Environemnt", "QEA");
-		
 		extent.setSystemInfo("Operating System", "WIN11");
 		extent.setSystemInfo("Browser", "EDGE | CHROME");
 		List<String> includedGroups = testContext.getCurrentXmlTest().getIncludedGroups();

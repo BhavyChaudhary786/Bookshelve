@@ -12,9 +12,6 @@ import test_Base.Base_Class;
  
  
 public class TS_1  extends Base_Class{
-
-	
-		
 		Home_Page hp;
 		
 		@BeforeMethod
@@ -53,8 +50,8 @@ public class TS_1  extends Base_Class{
 		hp.BookShelveName();
 		logger.info("Getting top three Bookshelves info.");
 		logger.info("***TS_1 test case passed successfully.....***");
-		System.out.println("*********************************************************");
-		System.out.println("*********************************************************");
+		System.out.println("*************************************************************************");
+		System.out.println("*************************************************************************");
 		
 		}
 	}

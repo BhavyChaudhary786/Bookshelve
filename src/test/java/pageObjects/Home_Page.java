@@ -24,9 +24,9 @@ public class Home_Page extends Base_Page {
 	}
 	String path="C:\\Users\\2318425\\eclipse-workspace\\BookShelves\\testData\\sheet1.xlsx";
 	ExcelUtils util=new ExcelUtils(path);
- 
 	
-//Locators
+//*************************WebElement Locators***********************************//
+	
 @FindBy(xpath="//*[@id='content']/div[3]/div/div[3]/a[5]") 
 WebElement bookShelf;
  
@@ -69,7 +69,8 @@ WebElement trending;
 @FindBy(xpath="//*[@id='header']/section/div/ul[2]/li[3]/a")
 WebElement btn_gift;
  
-//Actions Method
+//***********************Action Methods***************************************//
+
  
 public void clickBookShelves()
 {

@@ -1,8 +1,6 @@
 package test_Cases;
 
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import pageObjects.Gift_page;
@@ -34,8 +32,10 @@ public class TS_3 extends Base_Class{
 		logger.info("Clicking on Birthday And Anniversary Option.");
 	    }
 	    @Test(priority=3)
-	    public void gift_info() {
-		gp.Amount();
+	    public void gift_info() throws InterruptedException {
+		gp.InvalidAmount();
+		logger.info("Invalid Amount Entered");
+		gp.validAmount();
 		logger.info("Amount is Entered.");
 		
 		gp.SelectMonth();
@@ -76,8 +76,8 @@ public class TS_3 extends Base_Class{
 		logger.info("Error message is printed on console.");
 		
 		logger.info("***TS_3 test case passed successfully. ***");
-		System.out.println("*********************************************************");
-		System.out.println("*********************************************************");
+		System.out.println("*************************************************************************");
+		System.out.println("*************************************************************************");
 
 	}
 

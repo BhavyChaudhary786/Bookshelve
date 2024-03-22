@@ -1,0 +1,143 @@
+	
+	Problem Statement : Display Bookshelves
+	Website : "https://www.urbanladder.com/"
+	---------------------------------------------------------------------
+	 
+	 MODULES OF PROJECT
+	 
+	 1) Verify Login Functionality :
+	 	* Verify Login functionality by providing Invalid Credentials.
+	 	* Verify Login functionality by providing Valid Credentials.
+	 	
+	 2) Display the names and price of Bookshelves
+	 
+	    * Take first 3 Book-Shelf names and price below Rs. 15000, 
+	    * Keeping Storage type as open
+	    * Excluding out of stock.
+	               
+	   
+	 3) Display the Book shelf names of home decore brand and Sub-Menus of Collections 
+	 
+	 	* Display the Book Shelf names  under @HomeDecor.
+	 	* Display all the sub menus of Collections.
+	 
+	 4) Verify the error message from the ‘Gift Cards’ page.
+	 
+	 	* Display error message after providing invalid phone number.
+	 
+	 
+	 
+	Steps of the Procedure:
+	----------------------------------------------------------------------
+	 
+	1)  Launch any browser (In this code we have used Chrome browser and Microsoft Edge browser).
+	2)  Goto “https://www.urbanladder.com/”.
+	3)  Scroll the page and click on ‘Bookshelves’ option. (It will take user to ‘Bookshelves’ page).
+	4)  Drag and drop the ‘price’ slider to Rs.15000.
+	5)  Choose ‘Storage Type’ as ‘Open’.
+	6)  Select the ‘Exclude Out Of Stock’ checkbox field.
+	7)  Take the list of first 3 bookshelves and print it on the console.
+	8)  Select the ‘By the home dekor’ from the ‘Brand’ menu option.
+	9)  Take the list of all the bookshelves under 'By the home dekor' and print it on the console.
+	10) Scroll the page up and click on ‘Gift Cards’ Option. (It will take user to ‘Gift Cards’ page).
+	11) Click on the ‘Birthday/Anniversary’ option.
+	12) In the ‘Amount’ textbox, enter the amount.
+	13) Click ‘NEXT’ Button.
+	14) Fill all the mandatory fields except ‘Recipient’s mobile no.’ textbox.
+	15) Enter invalid value in the ‘Recipient’s mobile no.’ textbox.
+	16) Click ‘CONFIRM’ Button.
+	17) Check whether error message is displayed.
+	18) Display the error message on the console.
+	 
+	 
+	Folders
+	----------------------------------------------------------------------
+	 1) src/test/java
+	
+	       i)   test_Base
+	       			-Base_Class.java
+	           
+	       ii)  pageObjects
+					-Base_Page.java
+					-Gift_page.java
+					-Home_Page.java
+					-Login_Page.java
+					
+	       iii) test_Cases
+	            	-TS_Login.java
+	            	-TS_1.java
+	            	-TS_2.java
+	            	-TS_3.java
+	            	
+	       iv)  utilities
+	       			-ExcelUtils.java
+	       			-ExtentReportManager.java
+	
+	           
+	 2) src/test/resources
+	 
+	 		i) config.properties
+	 		
+	 		ii) log4j2.xml
+	 		
+	 3) logs (logger files)
+	 
+	 4) reports- (extent reports)
+	 
+	 5) Screenshots (All the requires Screenshots saved here )
+	 
+	 6) testData
+	 
+	 		i)sheet1.xlsx 
+	 		
+	 7) crossBrowser.xml
+	 
+	 8) oneBrowser.xml
+	 
+	 9) pom.xml
+	 
+	 
+	Data Driven Concepts
+	-----------------------------------------------------------------------
+	1) Properties File (Reading Data)
+	 
+	* (config.properties)- This properties file conists of login id , password  and URL value.
+	 
+	 
+	 
+	3) Excel File (Writing data)
+	 
+	   1. (sheet.xlsx)- This Excel file consist   
+	 
+	      * The bookshelves name and price below 15000 after applying appropriate filters.
+	      * The bookshelves name under brand 'By the home decor' .
+	      * All the sub-menus of Collections.
+	 
+	 
+	 
+	Key Automation Scope
+	-------------------------------------------------------------------------
+	 
+	-> Using drag & drop
+	-> Locating elements precisely.
+	-> Using appropriate synchronization technique.
+	-> Extracting menu items & store in collections
+	-> Scrolling up and down in web page
+	-> Filling form (in different objects in web page)
+	-> Capture warning message   
+	-> Taking Screenshots
+	 
+	 
+	Technology/Automation Tools Used
+	-------------------------------------------------------------------------
+	1) Selenium Webdriver and it's concepts.
+	2) Maven
+	3) TestNG framework and it's concepts.
+	4) Data Driven approach
+	5) Page Object Model
+	6) Extent Report/ TestNG Report
+	7) Excel and Property file concepts
+	8) Multiple Browser testing concepts
+	9) Java Concepts
+	10)Cucumber
+	11)Git & GitHub

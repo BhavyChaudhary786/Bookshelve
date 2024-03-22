@@ -73,8 +73,8 @@ public class TS_2 extends Base_Class {
 		
 		logger.info("All the sub-menus under collections is printed.");
 		logger.info("***TS_2 test case passed successfully.....***");
-		System.out.println("*********************************************************");
-		System.out.println("*********************************************************");
+		System.out.println("*************************************************************************");
+		System.out.println("*************************************************************************");
 		}
 	}
 

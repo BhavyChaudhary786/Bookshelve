@@ -10,6 +10,10 @@ public class Login_Page extends Base_Page {
 		super(driver);
 	}
 	public Properties p;
+	
+	
+	//*************************WebElement Locators***********************************//
+	
 	@FindBy(xpath="//*[@id=\"header\"]/div[1]/div/section[3]/ul/li[2]/span")
 	WebElement icon_btn;
 	@FindBy(xpath="//*[@class='dropdown']/li[1]/a")
@@ -25,10 +29,7 @@ public class Login_Page extends Base_Page {
 	@FindBy(xpath="//*[@id='existing-customer']/div/div")
 	WebElement error_mess;
 
-	
-	
-	
- 
+	//***********************Action Methods***************************************//
  
 	public void Icon() throws InterruptedException {
 		act.moveToElement(icon_btn).perform();

@@ -18,7 +18,7 @@ public class TS_Login extends Base_Class{
 		logger.info("Clicking on login.... ");
 	}
 
-	@Test(priority=2)
+	@Test(priority=2 , dependsOnMethods="LoginClick")
 	public void InvalidLogin() throws InterruptedException, IOException {
 		lp.Email();
 		logger.info("Providing email id...");
@@ -30,7 +30,7 @@ public class TS_Login extends Base_Class{
 		
 		}
 
-	@Test(priority=3)
+	@Test(priority=3 , dependsOnMethods="InvalidLogin")
 	public void Error_Navigate() throws InterruptedException {
 		lp.ErrorMess();
 		logger.info("Error Message Printed");
@@ -38,7 +38,7 @@ public class TS_Login extends Base_Class{
 //		Thread.sleep(3000);
 	}
 	
-	@Test(priority=4)
+	@Test(priority=4 )
 	public void LoginClickNew() throws InterruptedException {
 		lp.Icon();
 		logger.info("***Starting Login Test ***");
@@ -46,14 +46,14 @@ public class TS_Login extends Base_Class{
 		logger.info("Clicking on login.... ");
 	}
 	
-	@Test(priority=5)
+	@Test(priority=5 , dependsOnMethods="LoginClickNew")
 	public void ValidLogin() throws InterruptedException, IOException {
 		lp.Emailnew();
 		lp.Passwordnew();
 		lp.Login_Btn();
 		System.out.println("Login Successfully Completed");
-		System.out.println("**********************************************************");
-		System.out.println("**********************************************************");
+		System.out.println("*************************************************************************");
+		System.out.println("*************************************************************************");
 	}
 
 }
