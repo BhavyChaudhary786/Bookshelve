@@ -9,13 +9,20 @@
     <classes>
       <class name="test_Cases.TS_2">
         <methods>
-          <include name="select_Home_dkr"/>
           <include name="tearDown"/>
           <include name="set2"/>
           <include name="setup"/>
           <include name="Print_Book2"/>
         </methods>
       </class> <!-- test_Cases.TS_2 -->
+      <class name="test_Cases.TS_1">
+        <methods>
+          <include name="set1"/>
+          <include name="tearDown"/>
+          <include name="BookShelve"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- test_Cases.TS_1 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

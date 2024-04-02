@@ -79,7 +79,7 @@ public void clickBookShelves()
  
 public void clickPopup()
 {
-//	Popup.click();
+  //Popup.click();
 	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class='close-reveal-modal hide-mobile']"))).click();
 }
  
@@ -119,16 +119,12 @@ public void BookShelveName() throws InterruptedException, IOException {
 		util.setCellData("Sheet1",0,1,"Price");
 		util.setCellData("Sheet1",r,0,t);
 		util.setCellData("Sheet1",r,1,Price);
-//		String BookShelve=driver.findElement(By.xpath("//*[@id='content']/div[3]/ul/li["+r+"]/div/div[5]/a/div[1]/span")).getText();
-//		String Price=driver.findElement(By.xpath("//*[@id='content']/div[3]/ul/li["+r+"]/div/div[5]/a/div[2]/span")).getText();
-//		util.setCellData("Sheet1",r,0,BookShelve);
-//		util.setCellData("Sheet1",r,1,Price);
 			}
 	}
 
 
-public void Brand() {
-//	Actions act=new Actions(driver);
+public void Brand() throws InterruptedException {
+	Thread.sleep(2000);
 	act.moveToElement(brand).perform();
 }
 
@@ -144,32 +140,23 @@ public void click_giftCard() {
 
 }
 public int no_of_item() throws InterruptedException {
-//	Thread.sleep(1000);
 	List<WebElement> list_of_item=driver.findElements(By.xpath("//*[@id=\"content\"]/div[3]/ul/li[\"+i+\"]/div/div[5]/a/div[1]/span"));
 	return list_of_item.size();
 	}
 public void print_item(int n) throws InterruptedException, IOException {
-//	Thread.sleep(2000);
-	
+	Thread.sleep(2000);
 	for(int i=1;i<=2;i++) {
 		String s=driver.findElement(By.xpath("//*[@id='content']/div[3]/ul/li["+i+"]/div/div[5]/a/div[1]/span")).getText();
 	    System.out.println("BookShelf "+i+":"+s);
-	    util.setCellData("Sheet1",5,0,"BookShelve Name ");
-	    util.setCellData("Sheet1",i+5,0,s);  
-//		util.setCellData("Sheet1",5,0,"BookShelve Name ");
-//		String BookShelveName=driver.findElement(By.xpath("//*[@id='content']/div[3]/ul/li["+i+"]/div/div[5]/a/div[1]/span")).getText();
-//		util.setCellData("Sheet1",i+5,0,BookShelveName);  
+	    util.setCellData("Sheet1",5,0,"BookShelve Name ");  
 		
 	}
 }
 
 public void Trending() throws InterruptedException {
-//	Thread.sleep(2000);
 	
 	WebElement element = driver.findElement(By.xpath("//*[@id='header']/section/div/ul[2]/li[3]/a"));
 	js.executeScript("arguments[0].scrollIntoView(true);",element);
-
-//	Actions act=new Actions(driver);
 	act.moveToElement(trending).perform();
 
 }
@@ -181,14 +168,10 @@ public int size_of_collection() {
 public void Collections(int n) throws InterruptedException, IOException{
 	Thread.sleep(1000);
 	for(int i=1;i<=n;i++) {
-//		Thread.sleep(1000);
 		String a=driver.findElement(By.xpath("//*[normalize-space()='UL Collections']/following-sibling::ul/li["+i+"]/a/span")).getText();
 		System.out.println("Collections "+i+ ": " +a);	
 		util.setCellData("Sheet1",9,0,"Collections List ");
-		util.setCellData("Sheet1",i+9,0,a);
-
-		
-		
+		util.setCellData("Sheet1",i+9,0,a);	
 		}	
 	}	
 }

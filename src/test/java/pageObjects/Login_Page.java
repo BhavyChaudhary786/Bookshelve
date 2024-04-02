@@ -58,7 +58,7 @@ public class Login_Page extends Base_Page {
 	public void ErrorMess() throws InterruptedException {
 		String error=error_mess.getText();
 		System.out.println(error);
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 	}
 	
 	public void Emailnew() throws InterruptedException, IOException {
@@ -76,4 +76,5 @@ public class Login_Page extends Base_Page {
 		password.clear();
 		password.sendKeys(p.getProperty("password"));	
 
-}}
+	}
+}

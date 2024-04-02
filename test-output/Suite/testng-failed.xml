@@ -5,56 +5,16 @@
     <listener class-name="utilities.ExtentReportManager"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="test_Cases.TS_3">
-        <methods>
-          <include name="recipient_info"/>
-          <include name="click_bNa"/>
-          <include name="tearDown"/>
-          <include name="set3"/>
-          <include name="error_info"/>
-          <include name="click_gift_card"/>
-          <include name="setup"/>
-          <include name="senders_info"/>
-          <include name="gift_info"/>
-        </methods>
-      </class> <!-- test_Cases.TS_3 -->
-      <class name="test_Cases.TS_Login">
-        <methods>
-          <include name="Error_Navigate"/>
-          <include name="set"/>
-          <include name="LoginClick"/>
-          <include name="ValidLogin"/>
-          <include name="LoginClickNew"/>
-          <include name="InvalidLogin"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- test_Cases.TS_Login -->
       <class name="test_Cases.TS_2">
         <methods>
-          <include name="print_collection"/>
           <include name="select_Home_dkr"/>
-          <include name="hover_price"/>
           <include name="tearDown"/>
-          <include name="Storage_Stock"/>
-          <include name="Popup_Handling"/>
           <include name="set2"/>
           <include name="setup"/>
-          <include name="Print_Book2"/>
         </methods>
       </class> <!-- test_Cases.TS_2 -->
-      <class name="test_Cases.TS_1">
-        <methods>
-          <include name="Storage_Stock"/>
-          <include name="set1"/>
-          <include name="BookShelve"/>
-          <include name="tearDown"/>
-          <include name="Handle_Popup"/>
-          <include name="Price_Setting"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- test_Cases.TS_1 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

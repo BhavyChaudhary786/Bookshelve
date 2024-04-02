@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  
 import test_Base.Base_Class;
 
-//**************************WebDriver Setup****************************************U**//
+//**************************WebDriver Setup*******************************************//
 //**************************Actions Class Setup***************************************//
 //**************************JavaScriptExecutor Setup**********************************//
 //**************************Explicit Wait Declaration*********************************//
